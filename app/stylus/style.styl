@@ -1,0 +1,240 @@
+html
+    font-family sans-serif
+    -ms-text-size-adjust 100%
+    -webkit-text-size-adjust 100%
+    box-sizing border-box
+
+body
+    margin 0
+    background-color #40a040
+    font-family arial
+    margin 0px
+
+img
+    border 0
+
+*,
+*:before,
+*:after
+    box-sizing inherit
+
+ul
+    &:not(.browser-default)
+        padding-left 0
+        list-style-type none
+        li
+            list-style-type none
+
+a
+    color #039be5
+    text-decoration none
+    -webkit-tap-highlight-color transparent
+    text-decoration none
+    color black
+
+.valign-wrapper
+    display -webkit-flex
+    display -ms-flexbox
+    display flex
+    -webkit-align-items center
+    -ms-flex-align center
+    align-items center
+
+.clearfix
+    clear both
+
+.z-depth-0
+    box-shadow none !important
+
+.container
+    margin 0 auto
+    max-width 1280px
+    width 90%
+    .row
+        margin-left -.75rem
+        margin-right -.75rem
+
+@media only screen and (min-width: 601px)
+    .container
+        width 85%
+
+@media only screen and (min-width: 993px)
+    .container
+        width 70%
+
+.row
+    margin-left auto
+    margin-right auto
+    margin-bottom 20px
+    &:after
+        content ""
+        display table
+        clear both
+    .col
+        float left
+        box-sizing border-box
+        padding 0 .75rem
+        min-height 1px
+        &.s12
+            width 100%
+            margin-left auto
+            left auto
+            right auto
+
+.row .col[class*="push-"],
+.row .col[class*="pull-"]
+    position relative
+
+@media only screen and (min-width: 993px)
+    .row
+        .col
+            &.l12
+                width 100%
+                margin-left auto
+                left auto
+                right auto
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    font-weight 400
+    line-height 1.1
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a
+    font-weight inherit
+
+h1
+    font-size 4.2rem
+    line-height 110%
+    margin 2.1rem 0 1.68rem 0
+
+h2
+    font-size 3.56rem
+    line-height 110%
+    margin 1.78rem 0 1.424rem 0
+
+h3
+    font-size 2.92rem
+    line-height 110%
+    margin 1.46rem 0 1.168rem 0
+
+h4
+    font-size 2.28rem
+    line-height 110%
+    margin 1.14rem 0 .912rem 0
+
+h5
+    font-size 1.64rem
+    line-height 110%
+    margin .82rem 0 .656rem 0
+
+h6
+    font-size 1rem
+    line-height 110%
+    margin .5rem 0 .4rem 0
+
+em
+    font-style italic
+
+strong
+    font-weight 500
+
+small
+    font-size 75%
+
+.hiddendiv
+    display none
+    white-space pre-wrap
+    word-wrap break-word
+    overflow-wrap break-word
+    padding-top 1.2rem
+    position absolute
+    top 0
+
+a#close
+    float right
+
+div#chromePrompt
+    margin 0px
+    padding 8px
+    position relative
+    height 16px
+    top -36px
+    &.animateOn
+        top 0px
+        -webkit-transition top 1200ms ease-out
+
+div#chromePrompt,ul#menu
+    background rgba(76, 175, 80, 0.67)
+    box-shadow 0px 2px 5px rgba(0, 0, 0, .5)
+
+span.indicator,span.card,span.placeholder,span#gears
+    background url('../img/cards103x143.png')
+    position absolute
+
+span
+    &.overlay
+        position absolute
+        z-index 2
+
+.logo
+    text-align center
+
+#gameDiv
+    top 40px
+    position absolute
+
+ul#menu
+    position absolute
+    list-style none
+    padding 0px
+    margin 0px
+    display none
+    left 0
+    top 60px
+    z-index 999
+    lh
+        background rgba(0, 0, 0, 0.9)
+        a
+            color white
+            font-weight bold
+            font-size small
+    li
+        &:hover
+            a
+                color white
+    a
+        &:hover
+            text-decoration none
+
+nav
+    width 100%
+    height 60px
+    top 0
+    position absolute
+    color whitesmoke
+    background #4CAF50
+    box-shadow 0 0 20px black
+
+#toggle
+    top 15px
+    left 30px
+    position absolute
+    color whitesmoke
+
+ul#menu lh,ul#menu li
+    padding 12px
+    border-bottom 1px solid rgba(0, 0, 0, 0.5)
+    display block
+
+ul#menu lh:hover,ul#menu li:hover
+    background rgba(76, 175, 80, 0.68)
+    box-shadow 0px 2px 5px rgba(0, 0, 0, .5)
